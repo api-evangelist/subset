@@ -1,8 +1,24 @@
 aid: subset
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/subset.png
 name: Subset
-description: 'Subset is a company surfaced as a portfolio company of index-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: future-of-work. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Subset is an AI-powered spreadsheet editor built for finance professionals, letting
+  them generate P&L statements from PDFs, build DCF and returns models, and process CIMs and teasers
+  through natural-language instructions inside a familiar spreadsheet interface. Built in NYC and SF
+  by former Wall Street professionals, Subset targets investment and financial-modeling workflows. It
+  was surfaced as a portfolio company of Index Ventures and added to the API Evangelist network. As of
+  this enrichment pass Subset ships a consumer/prosumer web application and help documentation but no
+  public developer API, OpenAPI specification, SDKs, or webhook surface.'
 url: https://raw.githubusercontent.com/api-evangelist/subset/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Future Of Work
+- Spreadsheet
+- Finance
+- Financial Modeling
+- Artificial Intelligence
+- Productivity
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/subset-domain-security.yml
 - type: Website
-  url: http://www.subset.so
+  url: https://www.subset.so
+- type: Documentation
+  url: https://docs.subset.so
+- type: SignUp
+  url: https://chat.subset.so
+- type: Support
+  url: https://discord.gg/9ec5thC7Np
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
